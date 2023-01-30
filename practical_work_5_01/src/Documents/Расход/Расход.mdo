@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b776ba61-44bd-4c9a-ad24-7696988555d1">
+  <producedTypes>
+    <objectType typeId="c0c5d15c-9ac9-49a3-a18e-2a20ae66aeb8" valueTypeId="81aee677-fcd7-423b-aee8-894f72f86794"/>
+    <refType typeId="9f1d6639-3155-4e59-8098-143e206d17b6" valueTypeId="0918b3b4-4044-4b61-9a48-1f83c52fd852"/>
+    <selectionType typeId="959ad7ef-3332-4708-97eb-1a941eb96938" valueTypeId="1e15047e-1ebf-486a-9a29-436f2515ecb9"/>
+    <listType typeId="f6a8c211-f3b8-41cf-8a1a-0c735b014ff7" valueTypeId="d9cd3bc5-34c2-490d-b50c-94516e8949cd"/>
+    <managerType typeId="62e5001b-61f9-4406-b98c-b56322454190" valueTypeId="3a8ee78d-54fc-425a-a50a-fbe6eaf01a65"/>
+  </producedTypes>
+  <name>Расход</name>
+  <synonym>
+    <key>ru</key>
+    <value>Расход</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.Расход.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.Расход.Form.ФормаДокумента</defaultObjectForm>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <forms uuid="ec7f8468-8fe6-4764-9d99-7e0a83f9cbbd">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="8d252a22-349c-44d3-b03b-4ce836ae1c9a">
+    <producedTypes>
+      <objectType typeId="e992ba6b-ca35-4524-840c-28b8deb26ffd" valueTypeId="aab33125-1855-434e-a71f-d0322ce7ada5"/>
+      <rowType typeId="2abad514-1217-422a-8b3d-e601ae902647" valueTypeId="e23d79ec-413c-4c03-8a5c-56ff2844e8de"/>
+    </producedTypes>
+    <name>Товары</name>
+    <synonym>
+      <key>ru</key>
+      <value>Товары</value>
+    </synonym>
+    <attributes uuid="84bd7da3-57bd-4d18-a428-069adc7b3db8">
+      <name>Количество</name>
+      <synonym>
+        <key>ru</key>
+        <value>Количество</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>3</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="f4be01f0-d104-4ab9-a5a4-b214df17eb3e">
+      <name>Цена</name>
+      <synonym>
+        <key>ru</key>
+        <value>Цена</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>3</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="b79d4f6e-adc8-43a0-950d-bafb3aac384e">
+      <name>Сумма</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сумма</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>3</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+</mdclass:Document>
